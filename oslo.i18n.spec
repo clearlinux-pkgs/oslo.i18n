@@ -4,7 +4,7 @@
 #
 Name     : oslo.i18n
 Version  : 2.6.0
-Release  : 15
+Release  : 16
 URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-2.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-2.6.0.tar.gz
 Summary  : Oslo i18n library
