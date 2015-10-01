@@ -4,7 +4,7 @@
 #
 Name     : oslo.i18n
 Version  : 2.6.0
-Release  : 16
+Release  : 17
 URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-2.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-2.6.0.tar.gz
 Summary  : Oslo i18n library
@@ -23,6 +23,7 @@ BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
+BuildRequires : funcsigs-python
 BuildRequires : hacking
 BuildRequires : linecache2-python
 BuildRequires : markupsafe-python
@@ -69,6 +70,8 @@ oslo.i18n -- Oslo Internationalization Utilities
 %package python
 Summary: python components for the oslo.i18n package.
 Group: Default
+Requires: Babel-python
+Requires: six-python
 
 %description python
 python components for the oslo.i18n package.
