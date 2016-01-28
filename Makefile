@@ -1,5 +1,5 @@
 PKG_NAME := oslo.i18n
-URL := http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.1.0.tar.gz
+URL := http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.2.0.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common

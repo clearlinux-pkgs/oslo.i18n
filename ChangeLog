@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+3.2.0
+-----
+
+* Updated from global requirements
+* add versionadded designations to newer functions
+* doc: contextual/plural translation requires oslo.i18n >=2.1.0
+* Trival: Remove 'MANIFEST.in'
+
 3.1.0
 -----
 
