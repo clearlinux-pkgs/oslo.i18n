@@ -1,12 +1,13 @@
 CHANGES
 =======
 
-3.5.0
+3.6.0
 -----
 
 * Updated from global requirements
+* Updated from global requirements
 * Better isolate tests and fixtures from environment
-* Update .gitreview for stable/mitaka
+* Updated from global requirements
 
 3.4.0
 -----
