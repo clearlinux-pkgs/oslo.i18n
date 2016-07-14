@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+3.8.0
+-----
+
+* Updated from global requirements
+* Don't include openstack/common in flake8 exclude list
+* Updated from global requirements
+
 3.7.0
 -----
 
