@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.9.0
+-----
+
+* Updated from global requirements
+* Fix parameters of assertEqual are misplaced
+
 3.8.0
 -----
 
