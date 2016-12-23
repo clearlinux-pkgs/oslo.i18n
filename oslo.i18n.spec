@@ -4,7 +4,7 @@
 #
 Name     : oslo.i18n
 Version  : 3.10.0
-Release  : 35
+Release  : 36
 URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.10.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.10.0.tar.gz
 Summary  : Oslo i18n library
