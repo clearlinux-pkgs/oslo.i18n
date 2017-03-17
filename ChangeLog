@@ -1,6 +1,39 @@
 CHANGES
 =======
 
+3.14.0
+------
+
+* Python 3.5 is added
+
+3.13.0
+------
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Fix wrong response with language zh-TW
+* Updated from global requirements
+* Update reno for stable/ocata
+
+3.12.0
+------
+
+* Add Constraints support
+* Show team and repo badges on README
+* Replace six.iteritems() with .items()
+
+3.11.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Add reno for release notes management
+* Add missing dependency testscenarios
+* Typo fix in oslo.i18n
+* Changed the home-page link
+* Add docs on how to display translated strings in your app
+
 3.10.0
 ------
 
