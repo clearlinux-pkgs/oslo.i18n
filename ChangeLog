@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.15.0
+------
+
+* add notes about skipping log translation setup
+* Updated from global requirements
+
 3.14.0
 ------
 
