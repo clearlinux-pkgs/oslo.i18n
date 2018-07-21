@@ -1,6 +1,88 @@
 CHANGES
 =======
 
+3.21.0
+------
+
+* Switch to stestr
+* Add release notes to README.rst
+* fix tox python3 overrides
+* Remove moxstubout usage
+* Remove stale pip-missing-reqs tox test
+* Trivial: Update pypi url to new url
+* set default python to python3
+* add lower-constraints job
+* Updated from global requirements
+
+3.20.0
+------
+
+* Imported Translations from Zanata
+* Update links in README
+* Imported Translations from Zanata
+* Update reno for stable/queens
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+3.19.0
+------
+
+* Remove -U from pip install
+* Avoid tox\_install.sh for constraints support
+* add bandit to pep8 job
+* Updated from global requirements
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+
+3.18.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Update reno for stable/pike
+* Updated from global requirements
+
+3.17.0
+------
+
+* Imported Translations from Zanata
+* Update URLs in documents according to document migration
+
+3.16.0
+------
+
+* switch from oslosphinx to openstackdocstheme
+* turn on warning-is-error in doc build
+* rearrange the documentation to fit into the new standard layout
+* Updated from global requirements
+* Enable some off-by-default checks
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+3.15.3
+------
+
+* Revert "Remove Babel as a runtime requirement"
+
+3.15.2
+------
+
+* Updated from global requirements
+* Remove Babel as a runtime requirement
+
+3.15.1
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Check reStructuredText documents for common style issues
+
 3.15.0
 ------
 
@@ -96,7 +178,7 @@ CHANGES
 3.1.0
 -----
 
-* [doc] Update _i18n.py example to pass pep8
+* [doc] Update \_i18n.py example to pass pep8
 * Add missing blank in usage.rst
 * Remove Python 2.6 workround for logging
 * Drop python 2.6 support
@@ -120,7 +202,7 @@ CHANGES
 * Imported Translations from Zanata
 * Move 'history' -> release notes section
 * Add shields.io version/downloads links/badges into README.rst
-* Change ignore-errors to ignore_errors
+* Change ignore-errors to ignore\_errors
 * Added the home-page value with Oslo wiki
 * Updated from global requirements
 
@@ -142,7 +224,7 @@ CHANGES
 * Updated from global requirements
 * Imported Translations from Transifex
 * Updated from global requirements
-* Clean up _translate_msgid logic a bit
+* Clean up \_translate\_msgid logic a bit
 
 2.3.0
 -----
@@ -165,7 +247,7 @@ CHANGES
 2.1.0
 -----
 
-* Only define CONTEXT_SEPARATOR once
+* Only define CONTEXT\_SEPARATOR once
 * Support contextual and plural form of gettext functions
 * Imported Translations from Transifex
 * clarify translation policy
@@ -185,7 +267,7 @@ CHANGES
 * Advertise support for Python3.4 / Remove support for Python 3.3
 * Updated from global requirements
 * Misplaced parenthesis causing confusion
-* Remove run_cross_tests.sh
+* Remove run\_cross\_tests.sh
 * Imported Translations from Transifex
 
 1.6.0
@@ -210,7 +292,7 @@ CHANGES
 1.3.1
 -----
 
-* Clear global cache in test_get_available_languages
+* Clear global cache in test\_get\_available\_languages
 * Make setup.cfg packages include oslo.i18n
 * Improve fixture documentation
 
@@ -233,12 +315,12 @@ CHANGES
 
 * Imported Translations from Transifex
 * Add note for integration modules in libraries
-* Activate pep8 check that _ is imported
+* Activate pep8 check that \_ is imported
 * Add pbr to installation requirements
 * Updated from global requirements
 * Updated from global requirements
 * Remove extraneous vim editor configuration comments
-* Make clear in docs to use _LE() when using LOG.exception()
+* Make clear in docs to use \_LE() when using LOG.exception()
 * Support building wheels (PEP-427)
 * Imported Translations from Transifex
 * Fix coverage testing
@@ -302,7 +384,7 @@ CHANGES
 * initial export with graduate.sh
 * Add API for creating translation functions
 * Use oslotest instead of common test module
-* Fix test_gettextutils on Python 3
+* Fix test\_gettextutils on Python 3
 * Fix gettextutil.Message handling of deep copy failures
 * Change lazy translation to retain complete dict
 * Remove requirements.txt from .gitignore
@@ -314,13 +396,13 @@ CHANGES
 * Add support for locales missing from babel
 * Allow the Message class to have non-English default locales
 * Implementation of translation log handler
-* Use hacking import_exceptions for gettextutils._
+* Use hacking import\_exceptions for gettextutils.\_
 * Translation Message improvements
 * Fix violations of H302:import only modules
 * Fixed misspellings of common words
 * Trivial: Make vertical white space after license header consistent
 * Remove vim header
-* Use six.text_type instead of unicode function in tests
+* Use six.text\_type instead of unicode function in tests
 * Fix typos in oslo
 * Adjust import order according to PEP8 imports rule
 * Replace assertEquals with assertEqual
@@ -332,7 +414,7 @@ CHANGES
 * Replace using tests.utils part2
 * Enable multiple translation domains for gettextutils
 * Bump hacking to 0.7.0
-* Allow mapping _ to lazy gettext path
+* Allow mapping \_ to lazy gettext path
 * Fix Message format-string parsing
 * Add common methods required to allow translation of REST API responses
 * Add eclipse project files to .gitignore
@@ -346,7 +428,7 @@ CHANGES
 * Add a gettextutils.install() helper function
 * gettextutils: fix translation domain
 * Fix Copyright Headers - Rename LLC to Foundation
-* Add join_consumer_pool() to RPC connections
+* Add join\_consumer\_pool() to RPC connections
 * Replace direct use of testtools BaseTestCase
 * Use testtools as test base class
 * Fixes import order errors
