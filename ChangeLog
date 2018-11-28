@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+3.23.0
+------
+
+* Override getttext.find to cache result
+* Don't quote {posargs} in tox.ini
+* Clean up .gitignore references to personal tools
+* Always build universal wheels
+* Remove references to log translation functions
+* Use templates for cover and lower-constraints
+
 3.22.1
 ------
 
