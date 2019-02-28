@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : oslo.i18n
-Version  : 3.23.0
-Release  : 46
-URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.0.tar.gz
-Source99 : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.0.tar.gz.asc
+Version  : 3.23.1
+Release  : 47
+URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.1.tar.gz
+Source99 : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-3.23.1.tar.gz.asc
 Summary  : Oslo i18n library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -23,8 +23,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/oslo.i18n.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the oslo.i18n package.
@@ -53,14 +56,15 @@ python3 components for the oslo.i18n package.
 
 
 %prep
-%setup -q -n oslo.i18n-3.23.0
+%setup -q -n oslo.i18n-3.23.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1543417379
+export SOURCE_DATE_EPOCH=1551395892
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
