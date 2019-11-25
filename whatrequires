@@ -24,10 +24,15 @@ oslo.log
 oslo.middleware
 oslo.policy
 oslo.privsep
+oslo.reports
 oslo.service
 oslo.upgradecheck
+oslo.utils
+oslo.versionedobjects
 oslo.vmware
 pypowervm
+python-barbicanclient
+python-glanceclient
 python-keystoneclient
 python-magnumclient
 python-mistralclient
@@ -37,4 +42,5 @@ python-openstackclient
 python-saharaclient
 python-senlinclient
 python-troveclient
+python-zaqarclient
 sahara
