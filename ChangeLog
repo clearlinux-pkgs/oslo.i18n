@@ -1,10 +1,18 @@
 CHANGES
 =======
 
+4.0.0
+-----
+
+* remove outdated header
+* [ussuri][goal] Drop python 2.7 support and testing
+* tox: Trivial cleanup
+
 3.25.1
 ------
 
 * Imported Translations from Zanata
+* Integrate sphinxcontrib-apidoc
 
 3.25.0
 ------
