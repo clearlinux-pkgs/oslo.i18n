@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.i18n
-Version  : 4.0.0
-Release  : 56
-URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.0.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.0.tar.gz.asc
+Version  : 4.0.1
+Release  : 57
+URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.1.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-4.0.1.tar.gz.asc
 Summary  : Oslo i18n library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -28,33 +28,8 @@ BuildRequires : six
 ========================
 Team and repository tags
 ========================
-
 .. image:: https://governance.openstack.org/tc/badges/oslo.i18n.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-==================================================
- oslo.i18n -- Oslo Internationalization Utilities
-==================================================
-
-.. image:: https://img.shields.io/pypi/v/oslo.i18n.svg
-    :target: https://pypi.org/project/oslo.i18n/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/dm/oslo.i18n.svg
-    :target: https://pypi.org/project/oslo.i18n/
-    :alt: Downloads
-
-The oslo.i18n library contain utilities for working with
-internationalization (i18n) features, especially translation for text
-strings in an application or library.
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/oslo.i18n/latest
-* Source: https://opendev.org/openstack/oslo.i18n
-* Bugs: https://bugs.launchpad.net/oslo.i18n
-* Release notes:  https://docs.openstack.org/releasenotes/oslo.i18n/
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the oslo.i18n package.
@@ -78,21 +53,24 @@ Summary: python3 components for the oslo.i18n package.
 Group: Default
 Requires: python3-core
 Provides: pypi(oslo.i18n)
+Requires: pypi(pbr)
+Requires: pypi(babel)
+Requires: pypi(six)
 
 %description python3
 python3 components for the oslo.i18n package.
 
 
 %prep
-%setup -q -n oslo.i18n-4.0.0
-cd %{_builddir}/oslo.i18n-4.0.0
+%setup -q -n oslo.i18n-4.0.1
+cd %{_builddir}/oslo.i18n-4.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583194112
+export SOURCE_DATE_EPOCH=1586272850
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -106,7 +84,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.i18n
-cp %{_builddir}/oslo.i18n-4.0.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.i18n/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/oslo.i18n-4.0.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.i18n/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
