@@ -6,7 +6,7 @@
 #
 Name     : oslo.i18n
 Version  : 5.0.1
-Release  : 59
+Release  : 60
 URL      : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-5.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-5.0.1.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.i18n/oslo.i18n-5.0.1.tar.gz.asc
